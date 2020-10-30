@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    color: coral;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 100px 10%;
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 7;
+    background: white;
+}
+nav h1{
+    grid-column: 2/3;
+}
+nav ul{
+    list-style: none;
+    grid-column: 3/4;
+}
+.booking{
+ border-radius: 0.5rem;
+ color: white;
+ grid-column: 4/5;
+ width: 100%;
+ font-size: 14px;
+ font-weight: bolder;
+ cursor: pointer;
+ height: 50px;
+ background: rgba(0, 0, 0, 0.7);
+}
+.booking:hover{
+    color: coral;
+}
+
+
+.topsection{
+    width: 100%;
+    
+    overflow: hidden;
+    
+  
+}
+.alltopsection{
+    width: 100%;
+    
+    position: relative;
+}
+.alltopsection img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.centrTextintop{
+    width: 40%;
+    
+  
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: coral;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.whatdowedo{
+    width: 80%;
+   
+    margin-left: 50%;
+    transform: translate(-50% );
+    
+}
+.allwhatdowedo{
+    width: 100%;
+    margin-top: 3vh;
+    position: relative;
+   
+}
+.allwhatdowedo img{
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10rem;
+}
+.textwhatdowedo{
+    width: 65%;
+   height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+.mission{
+    width: 100%;
+    
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 3vh;
+}
+
+.allmission{
+    display: grid;
+    grid-template-columns: 10% 45% 30% 10%;
+
+}
+.missiontext {
+    grid-column: 2/3;
+    text-align: center;
+    margin-top: 2vh;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.allmission img{
+    grid-column: 3/4;
+    width: 100%;
+    
+    object-fit: cover;
+    border-radius: 15rem;
+    margin-left: 5%;
+}
+
+.photolinks{
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    
+ 
+}
+
+.allphotolinks{
+    display: grid;
+    grid-template-columns: 5% 40% 10% 40% 5%;
+    margin-top: 5vh;
+}
+.img1{
+    width: 100%;
+    grid-column: 2/3;
+}
+.img12{
+    grid-column: 2/3;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10rem;
+    position: relative;
+}
+
+.img2{
+    grid-column: 4/5;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10rem;
+}
+
+
+.whatsnew{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  
+    margin-top: 3vh;
+}
+.allwhatsnew{
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+}
+
+.whatsnewtext{
+    text-align: center;
+    width: 100%;
+    grid-column: 1/2;
+    background: rgba(255, 255, 255, 0.4);
+    
+}
+.allwhatsnew img{
+    grid-column: 3/3;
+    width: 100%;object-fit: cover;
+    border-radius: 3rem;
+}
+
+
+.fot{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    height: 10vh;
+}
+
+.fot ul{
+    grid-column: 2/3;
+    color: coral;
+    list-style: none;
+}
+
+.icons{
+    grid-column: 3/4;
+    color: coral;
+}

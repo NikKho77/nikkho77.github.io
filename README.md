@@ -1,6 +1,6 @@
 # nikkho77.github.io
 <!DOCTYPE html>
-{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@
 
     <section class="topsection">
         <div class="alltopsection">
-            <img src="./img/sew1.jpeg" alt="">
+            <img src="./sew1.jpeg" alt="">
             <div class="centrTextintop">
                 <h1>Everything starts with an idea</h1>
                 <p>-Earl Nightngale</p>
@@ -32,7 +32,7 @@
 
     <section class="whatdowedo">
         <div class="allwhatdowedo">
-            <img src="./static/img/sew2.jpeg" alt="">
+            <img src="./sew2.jpeg" alt="">
             <div class="textwhatdowedo">
                 <h1>Start of the text</h1>
                 <p>actually the text</p>
@@ -47,15 +47,15 @@
                 <h1>Mission top text</h1>
                 <p>actually a text</p>
             </div>
-            <img src="./static/img/sew4.jpeg" alt="">
+            <img src="./sew4.jpeg" alt="">
         </div>
     </section>
 
 
     <section class="photolinks">
         <div class="allphotolinks">
-           <a href="" class="img1"> <img src="./static/img/sew2.jpeg" alt="" class="img12" ></a>
-           <a href="" class="img2"><img src="./static/img/sew4.jpeg" alt="" class="img2"></a>
+           <a href="" class="img1"> <img src="./sew2.jpeg" alt="" class="img12" ></a>
+           <a href="" class="img2"><img src="./sew4.jpeg" alt="" class="img2"></a>
         </div>
     </section>
 
@@ -67,7 +67,7 @@
                 <p>aaa</p>
                 <p>sss</p>
             </div>
-            <img src="./static/img/sew5.jpeg" alt="">
+            <img src="./sew5.jpeg" alt="">
         </div>
     </section>
 

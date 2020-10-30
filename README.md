@@ -22,7 +22,7 @@
 
     <section class="topsection">
         <div class="alltopsection">
-            <img src="./static/img/sew1.jpeg" alt="">
+            <img src="./img/sew1.jpeg" alt="">
             <div class="centrTextintop">
                 <h1>Everything starts with an idea</h1>
                 <p>-Earl Nightngale</p>

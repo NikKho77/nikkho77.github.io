@@ -46,10 +46,10 @@
 }
 .full-img{
     position: absolute;
-    height: 70%;
+    height: 85%;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0.5);
+    left: 60%;
+    transform: translate(-60%,-50%) scale(0.5);
     transition: all 0.25s ease-out;
 }
 .full-img.open{

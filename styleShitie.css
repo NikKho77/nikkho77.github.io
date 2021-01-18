@@ -47,6 +47,7 @@
 .full-img{
     position: absolute;
     height: 85%;
+    width: 85%;
     top: 50%;
     left: 60%;
     transform: translate(-60%,-50%) scale(0.5);

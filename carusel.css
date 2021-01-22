@@ -6,10 +6,14 @@
 .carousel-container{
     width: 50%;
     margin: auto;
-    overflow: hidden;
+    
 }
 .carousel-slide{
     display: flex;
     width: 50%;
+     overflow: hidden;
   
+}
+.carousel-slide img{
+    width:100%;
 }

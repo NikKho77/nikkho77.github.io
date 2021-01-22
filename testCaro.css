@@ -35,10 +35,12 @@ html, body {
     width: calc(30px * 5);
     display: flex;
     justify-content: space-between;
+    opacity:1;
 }
  
 .viewSlide {
     width: 20px;
     height: 20px;
     background-color: red;
+    opacity:1;
 }

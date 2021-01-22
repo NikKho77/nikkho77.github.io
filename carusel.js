@@ -1,6 +1,7 @@
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImg = document.querySelectorAll('.carousel-slide img');
 const nextBtn = document.querySelector('#next');
+const prevBtn = document.querySelector('#prev');
 
 let counter = 1;
 const size = carouselImg[0].clientWidth;
@@ -13,7 +14,12 @@ nextBtn.addEventListener('click',() => {
     counter++;
     carouselSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
 });
-
+prevBtn.addEventListener('click',() => {
+    if(counter < carouselImg.length) return;
+    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+    counter--;
+    carouselSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
+});
 carouselSlide.addEventListener('transitionend', () => {
     if(carouselImg[counter].id === 'lastClone'){
         carouselSlide.style.transition = 'none';

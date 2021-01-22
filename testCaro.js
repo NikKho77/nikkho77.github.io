@@ -12,7 +12,7 @@ let viewSliders = document.querySelectorAll(".viewSlide");
 let viewSlide = 0;
  
 // Назначаем цвет индикатор слайда зелёный
-viewSliders[0].style.backgroundColor = "green";
+viewSliders[0].style.backgroundColor = "none";
  
 // Обработка клика на кнопку вперёд
 btnNext.addEventListener("click", function () {

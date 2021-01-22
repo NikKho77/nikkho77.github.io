@@ -4,7 +4,7 @@ html, body {
 }
  
 #viewport {
-    width: 100vw;
+    width: 60%;
     height: 450px;
     overflow: hidden;
 }

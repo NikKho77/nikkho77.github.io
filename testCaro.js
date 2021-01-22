@@ -17,7 +17,7 @@ viewSliders[0].style.backgroundColor = "green";
 // Обработка клика на кнопку вперёд
 btnNext.addEventListener("click", function () {
     // Делаем индикатор слайда красный
-    viewSliders[viewSlide].style.backgroundColor = "red";
+  //  viewSliders[viewSlide].style.backgroundColor = "red";
     // Условие, если номер слайда меньше четырёх
     if (viewSlide < 4) { // Если верно то
         // Увеличиваем номер слайда на один
@@ -27,7 +27,7 @@ btnNext.addEventListener("click", function () {
         viewSlide = 0;
     }
     // Закрашиваем индикатор слайда в зелёный
-    viewSliders[viewSlide].style.backgroundColor = "green";
+//    viewSliders[viewSlide].style.backgroundColor = "green";
     // Меняем позицию всего слайда
     slider.style.left = -viewSlide * viewport + "px";
 });
@@ -35,7 +35,7 @@ btnNext.addEventListener("click", function () {
 // Обработка клика на кнопку назад
 btnPrev.addEventListener("click", function () {
     // Делаем индикатор слайда красный
-    viewSliders[viewSlide].style.backgroundColor = "red";
+  //  viewSliders[viewSlide].style.backgroundColor = "red";
     // Условие, если номер слайда больше нуля
     if (viewSlide > 0) { // Если верно то
         // Уменьшаем номер слайда
@@ -45,7 +45,7 @@ btnPrev.addEventListener("click", function () {
         viewSlide = 4; 
     }
     // Закрашиваем индикатор слайда в зелёный
-    viewSliders[viewSlide].style.backgroundColor = "green";
+//    viewSliders[viewSlide].style.backgroundColor = "green";
     // Меняем позицию всего слайда
     slider.style.left = -viewSlide * viewport + "px";
 });

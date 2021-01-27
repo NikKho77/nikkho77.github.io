@@ -10,8 +10,8 @@
     opacity: 0.5;
 }
 form{
-    background: black;
-    opacity: 0.5;
+    
+    background: lightgrey;
     width: 80%;
     display: grid;
     grid-template-rows: 1fr 5% 1fr 5% 1fr 5% 1fr 5% 1fr;
@@ -19,20 +19,26 @@ form{
 #f1{
     grid-row: 1/2;
     width: 50%;
+    margin-left: 25%;
 }
 #f2{
     grid-row: 3/4;
     width: 50%;
+    margin-left: 25%;
 }
 #f3{
     grid-row: 5/6;
     width: 50%;
+    margin-left: 25%;
 }
 #f4{
     grid-row: 7/8;
     width: 50%;
+    margin-left: 25%;
+    height: 30vh;
 }
 button{
     grid-row: 9/10;
-    width: 20%;
+    width: 10%;
+    margin-left: 25%;
 }

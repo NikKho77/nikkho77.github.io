@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formScreen{
+    width: 80%;
+    background: black;
+    opacity: 0.5;
+}
+form{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 5% 1fr 5% 1fr 5% 1fr;
+}
+#f1{
+    grid-row: 1/2;
+}
+#f2{
+    grid-row: 3/4;
+}
+#f3{
+    grid-row: 5/6;
+}
+#f4{
+    grid-row: 7/8;
+}

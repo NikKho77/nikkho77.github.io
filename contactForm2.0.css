@@ -15,7 +15,7 @@ form{
     background: lightgrey;
     width: 80%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh 20vh 5vh 5vh 5vh;
 }
 #f1{
     grid-row: 1/2;

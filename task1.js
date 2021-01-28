@@ -22,7 +22,8 @@ const b3 = document.querySelector('.b3');
 let out3 = document.querySelector('.out3');
 
 b1.onclick = () => {
-    if(i1 == 4){
+    let num = i1.value;
+    if(num == 4){
         out1 = 'true';
     }else{
         out1 = 'false';

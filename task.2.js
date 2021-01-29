@@ -7,7 +7,7 @@ let count = 0;
 btn.onclick = function () {
    if(count < 51){
       div.innerHTML =  count;
-      count++;
+      count = count + 2;
    }
 }
 

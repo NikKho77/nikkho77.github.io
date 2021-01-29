@@ -13,9 +13,6 @@ btn.onclick = function () {
 
 btn2.onclick = () => {
    for(let i = 0;i < 51;i++){
-      if(count < i){
-         div.innerHTML = count + ' ';
-         count++;
-      }
+    div.innerHTML = i;
    }
 }

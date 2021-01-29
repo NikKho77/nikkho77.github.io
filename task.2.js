@@ -1,10 +1,13 @@
 const btn = document.querySelector('.b1');
 let div = document.querySelector('.out');
 
+let count = 0;
+
 function f1(){
-   for(let i = 0;i = 50; i++){
-      div.textContent = i + ' ';
-   }
+  if(count < 50 ){
+     count++;
+     div.textContent = count;
+  }
 }
 
 btn.onclick = f1();

@@ -4,7 +4,7 @@ let div = document.querySelector('.out');
 let count = 0;
 
 btn.onclick = function () {
-   if(count != 50){
+   if(count < 51){
       div.innerHTML = count;
       count++;
    }

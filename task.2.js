@@ -5,8 +5,9 @@ let count = 0;
 
 function f1(){
   if(count < 50 ){
-     count++;
      div.textContent = count;
+     count++;
+
   }
 }
 

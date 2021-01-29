@@ -5,7 +5,7 @@ let count = 0;
 
 function f1(){
   if(count < 50 ){
-     div.textContent = count;
+     div.innerHTML = count;
      count++;
 
   }

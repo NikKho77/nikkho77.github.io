@@ -1,93 +1,82 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <style>
+        .msgBox {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 242px;
+          background: #eee;
+        }
+  
+        .msgBox p {
+          line-height: 1.5;
+          padding: 10px 20px;
+          color: #333;
+          padding-left: 82px;
+          background-position: 25px center;
+          background-repeat: no-repeat;
+        }
+  
+        .msgBox button {
+          background: none;
+          border: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 1.1rem;
+          color: #aaa;
+        }
+  
+      </style>
 </head>
 <body>
-    <nav>
-        <h1>L.Gold</h1>
-        <ul>
-            <li id="li1"><a href="./vyazka.html">Вязание</a></li>
-            <li id="li2"><a href="./shitie.html">Шитьё</a></li>
-            <li><a href="./testCaro.html">test</a></li> 
-            <li><a href="./task.2.html">testForm</a><li/>
-          <!--  <li id="li3"><a>Галерея</a></li>-->
-            <li id="li3"><a>Контакты</a></li>
-        </ul>
-      <button class="booking">ЗАКАЗАТЬ</button>
-    </nav>
+    <button>Display message box</button>
 
+    <script>
+        //определения кнопки с хтмл
+      const btn = document.querySelector('button');
 
-    <section class="topsection">
-        <div class="alltopsection">
-            <img src="./sew1.jpeg" alt="">
-            <div class="centrTextintop">
-                <h1>Everything starts with an idea</h1>
-                <p>-Earl Nightngale</p>
-            </div>
-        </div>
-    </section>
-  <!--  <section class="whatdowedo">
-        <div class="allwhatdowedo">
-            <img src="./img/sew2.jpeg" alt="">
-            <div class="textwhatdowedo">
-                <h1>Start of the text</h1>
-                <p>actually the text</p>
-            </div>
-        </div>
-    </section>-->
+     //функ для вывода окна с сообщением
+        function displayMessege(msgText,msgType) {
+            let html = document.querySelector('html');
 
+            let panel = document.createElement('div');
+            panel.setAttribute('class','msgBox');
+            html.appendChild(panel);
 
-    <!--<section class="mission">
-        <div class="allmission">
-            <div class="missiontext">
-                <h1>Mission top text</h1>
-                <p>actually a text</p>
-            </div>
-            <img src="./img/sew4.jpeg" alt="">
-        </div>
-    </section>-->
+            let msg = document.createElement('p');
+            msg.textContent = msgText;
+            panek.appendChild(msg);
 
+            let closeBtn = document.createElement('button');
+            closeBtn.textContent = 'x';
+            panel.appendChild(closeBtn);
 
-    <section class="photolinks">
-        <div class="allphotolinks">
-            <div class="divimg1">
-           <a href="./vyazka.html" class="img1"> <img src="./sew2.jpeg" alt="" class="img12" ></a>
-           
-</div><div class="divimg2">          <a href="./shitie.html" class="img2"><img src="./sew4.jpeg" alt="" class="img2"></a>
-        </div></div>
-    </section>
+            closeBtn.onclick = function() {
+                panel.parentNode.removeChild(panel);
+            }
 
+            if(msgType === 'warning') {
+                msg.style.backgroundImage = 'url(warning.png)';
+                panel.style.backgroundColor = 'red';
+            }else if(msgType === 'chat'){
+                msg.style.backgroundImage = 'url(chat.png)';
+                panel.style.backgroundColor = 'aqua';
+            }else{
+                msg.style.paddingLeft = '20px';
+            }
 
-  <!-- <section class="whatsnew">
-        <div class="allwhatsnew">
-            <div class="whatsnewtext">
-                <h1>sho</h1>
-                <p>aaa</p>
-                <p>sss</p>
-            </div>
-            <img src="./img/sew5.jpeg" alt="">
-        </div>
-    </section>-->
-    <section class="video">
-    </section>
-
-    <section class="fot">
-        <ul>
-            <li>Телефон : </li>
-            <li>E-mail : </li>
-            <li></li>
-        </ul>
-        <div class="icons">
-        <a class="insta"><img src="/instagramIcon.png" alt="" class="insta1"></a>
-       </div>
-    </section>
-   
+        }
+        //функ для запуска функции выше
+        btn.onclick = function() {
+            displayMessege('Woo, this is a different messege!');
+        };
+    </script>
 </body>
 </html>
